@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doOrder"
+        android:text="주문하기" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문내역"
+         />
+    <TextView
+        android:id="@+id/order_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="______________"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_domino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도미노 피자"/>
+
+        <RadioButton
+            android:id="@+id/radio_mr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미스터 피자"/>
+
+        <RadioButton
+            android:id="@+id/radio_hut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="피자헛"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화주문"
+        android:onClick="order_Call"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/button_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인터넷 주문"
+        android:onClick="order_Internet"
+        android:enabled="false"/>
+
+</LinearLayout>

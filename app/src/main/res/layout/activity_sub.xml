@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="주문" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="피자" />
+
+        <Button
+            android:id="@+id/plus_pizza"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:text="+"
+            android:enabled="false"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/minus_pizza"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:text="-"
+            android:enabled="false"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_pasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="스파게티" />
+
+        <Button
+            android:id="@+id/plus_pasta"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:text="+"
+            android:enabled="false"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/minus_pasta"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:text="-"
+            android:enabled="false"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_pizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="피자=0" />
+
+    <TextView
+        android:id="@+id/text_pasta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="스파게티=0" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ok"
+        android:text="확인" />
+</LinearLayout>
